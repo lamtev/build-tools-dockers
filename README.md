@@ -2,7 +2,7 @@
 
 ##About image
 
-__The build-tools image is based on ubuntu:xenial and it contains:__
+The __build-tools__ image is based on __ubuntu:xenial__ and it contains:
 * git 2.7.4
 * gcc g++ 5.4.0
 * cmake 3.5.1

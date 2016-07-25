@@ -12,7 +12,7 @@ __The build-tools image is based on ubuntu:xenial and it contains:__
 * valgrind 3.11.0
 * lcov 1.12
 
-[Dockerfile](https://github.com/lamtev/docker_build-tools/blob/master/Dockerfile)
+##[Dockerfile](https://github.com/lamtev/docker_build-tools/blob/master/Dockerfile)
 
 ##Docker pull command
 

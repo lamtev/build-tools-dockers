@@ -4,4 +4,4 @@ services:
   - docker
 
 script:
-  - docker build -t lamtev/build-tools .
+  - docker build -t lamtev/cxx-build-tools .

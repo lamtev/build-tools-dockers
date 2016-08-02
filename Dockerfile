@@ -17,3 +17,5 @@ RUN apt-get update && apt-get install -y \
 		qt56translations \
 		valgrind \
 	&& rm -rf /var/lib/apt/lists/*
+
+ENV PATH /opt/qt56/bin:$PATH

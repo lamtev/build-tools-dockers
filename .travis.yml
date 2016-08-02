@@ -3,13 +3,35 @@ language: generic
 services:
   - docker
 
-script:
-  - cd latex-build-tools
-  - docker build -t lamtev/cxx-build-tools .
+matrix:
+  include:
+    - env: DOCKER_IMAGE="cxx-build-tools"
+    - env: DOCKER_IMAGE="latex-build-tools"
 
-after_success:		
-  - if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then		
-      docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";		
-      docker tag lamtev/latex-build-tools lamtev/latex-build-tools:$(date +%Y%m%d%H%M%S);		
-      docker push lamtev/latex-build-tools;		
+script:
+  - if [ "$DOCKER_IMAGE" == "cxx-build-tools" ]; then
+      cd cxx-build-tools;
+      docker build -t lamtev/cxx-build-tools . ;
+    fi
+    
+  - if [ "$DOCKER_IMAGE" == "latex-build-tools" ]; then
+     cd latex-build-tools;
+      docker build -t lamtev/latex-build-tools . ;
+    fi
+  
+after_success:
+  - if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then	
+      
+      if [ "$DOCKER_IMAGE" == "cxx-build-tools" ]; then
+        docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";		
+        docker tag lamtev/cxx-build-tools lamtev/cxx-build-tools:$(date +%Y%m%d%H%M%S);		
+        docker push lamtev/cxx-build-tools;
+      fi
+    
+      if [ "$DOCKER_IMAGE" == "latex-build-tools" ]; then
+        docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";		
+        docker tag lamtev/latex-build-tools lamtev/latex-build-tools:$(date +%Y%m%d%H%M%S);		
+        docker push lamtev/latex-build-tools;
+      fi
+      
     fi

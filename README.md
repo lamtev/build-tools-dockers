@@ -2,7 +2,7 @@
 
 ##About image
 
-The __build-tools__ image is based on __ubuntu:xenial__ and it contains:
+The __build-tools__ image is based on __ubuntu:latest__ and it contains:
 * git
 * gcc g++
 * cmake

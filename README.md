@@ -1,4 +1,4 @@
-#A build-tools docker image [![Build Status](https://travis-ci.org/lamtev/docker_build-tools.svg?branch=master)](https://travis-ci.org/lamtev/docker_build-tools)
+#The build-tools docker image [![Build Status](https://travis-ci.org/lamtev/docker_build-tools.svg?branch=master)](https://travis-ci.org/lamtev/docker_build-tools)
 
 ##About image
 

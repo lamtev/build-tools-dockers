@@ -5,3 +5,10 @@ services:
 
 script:
   - docker build -t lamtev/cxx-build-tools .
+
+after_success:		
+  - if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then		
+      docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";		
+      docker tag lamtev/cxx-build-tools lamtev/cxx-build-tools:$(date +%Y%m%d%H%M%S);		
+      docker push lamtev/cxx-build-tools;		
+    fi

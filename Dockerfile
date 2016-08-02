@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y \
 		git \
 		curl \
 		lcov \
+		libgl1-mesa-dev \
 		qt56base \
 		qt56declarative \
 		qt56tools \

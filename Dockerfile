@@ -1,14 +1,19 @@
 FROM ubuntu:xenial
 
-RUN apt update -y
-RUN apt install -y git
-RUN apt install -y cmake
-RUN apt install -y g++
-RUN apt install -y cloc
-RUN apt install -y cppcheck
-RUN apt install -y valgrind
-RUN apt install -y lcov curl
-RUN apt install -y software-properties-common
-RUN apt-add-repository -y ppa:beineri/opt-qt561-xenial
-RUN apt update -y
-RUN apt install -y qt56base qt56declarative qt56tools qt56translations
+RUN apt-get update && apt-get install -y software-properties-common \
+	&& apt-add-repository -y ppa:beineri/opt-qt561-xenial
+
+RUN apt-get update && apt-get install -y \
+		cloc \
+		cmake \
+		cppcheck \
+		curl \
+		g++ \
+		git \
+		lcov \
+		qt56base \
+		qt56declarative \
+		qt56tools \
+		qt56translations \
+		valgrind \
+	&& rm -rf /var/lib/apt/lists/*

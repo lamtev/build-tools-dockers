@@ -7,6 +7,7 @@ The __cxx-build-tools__ image is based on __ubuntu:latest__ and it contains:
 * gcc g++
 * cmake
 * qt 5.6.1 base, declarative, tools, translations
+* OpenGL
 * cloc
 * cppcheck
 * valgrind

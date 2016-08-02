@@ -9,7 +9,7 @@ script:
   - docker build -t lamtev/build-tools .
   
 after_success:
-  - if [ "$TRAVIS_BRANCH" == "master" -a !"$TRAVIS_PULL_REQUEST" ]; then
+  - if [ "$TRAVIS_BRANCH" == "master" -a -z "$TRAVIS_PULL_REQUEST" ]; then
       docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
       docker tag lamtev/build-tools lamtev/build-tools:$(date +%Y%m%d%H%M%S);
       docker push lamtev/build-tools;

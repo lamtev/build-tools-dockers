@@ -1,19 +1,20 @@
-#The cxx-build-tools docker image [![Build Status](https://travis-ci.org/lamtev/cxx-build-tools.svg?branch=master)](https://travis-ci.org/lamtev/cxx-build-tools)
+#The cxx-build-tools docker image
 
 ##About image
 
 The __cxx-build-tools__ image is based on __ubuntu:latest__ and it contains:
+
 * git
 * gcc g++
 * cmake
 * qt 5.6.1 base, declarative, tools, translations
-* OpenGL
+* openGL
 * cloc
 * cppcheck
 * valgrind
 * lcov
 
-##[Dockerfile](https://github.com/lamtev/cxx-build-tools/blob/master/Dockerfile)
+##[Dockerfile](https://github.com/lamtev/build-tools-dockers/blob/master/cxx-build-tools/Dockerfile)
 
 ##Docker pull command
 

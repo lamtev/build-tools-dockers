@@ -4,14 +4,15 @@
 
 The __cxx-build-tools__ image is based on __ubuntu:latest__ and it contains:
 
-* git
-* gcc g++
-* cmake
+* boost
 * cloc
+* cmake
 * cppcheck
-* valgrind
 * doxygen
+* gcc, g++
+* git
 * lcov
+* valgrind
 
 ##[Dockerfile](https://github.com/lamtev/build-tools-dockers/blob/master/cxx-build-tools/Dockerfile)
 

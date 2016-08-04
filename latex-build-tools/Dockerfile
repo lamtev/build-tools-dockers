@@ -1,5 +1,5 @@
 FROM ubuntu:latest
 
 RUN apt-get update && apt-get install -y \
-		texlive-latex-extra texlive-lang-cyrillic \
+		texlive-full \
 	&& rm -rf /var/lib/apt/lists/*

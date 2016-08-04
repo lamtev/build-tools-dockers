@@ -8,6 +8,7 @@ services:
 matrix:
   include:
     - env: DOCKER_IMAGE="cxx-build-tools"
+	- env: DOCKER_IMAGE="qt-build-tools"
     - env: DOCKER_IMAGE="latex-build-tools"
 
 script:

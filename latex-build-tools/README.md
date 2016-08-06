@@ -3,7 +3,7 @@
 ##About image
 
 The __latex-build-tools__ image is based on __ubuntu:latest__ and it contains
- __texlive-full__ packages
+ __LaTeX__ packages
  
 ##[Dockerfile](https://github.com/lamtev/build-tools-dockers/blob/master/latex-build-tools/Dockerfile)
  

@@ -2,17 +2,7 @@
 
 ##About image
 
-The __cxx-build-tools__ image is based on __ubuntu:latest__ and it contains:
-
-* boost
-* cloc
-* cmake
-* cppcheck
-* doxygen
-* gcc, g++
-* git
-* lcov
-* valgrind
+The __cxx-build-tools__ image is based on __ubuntu:latest__ and it contains some tools to build and test c++ projects.
 
 ##[Dockerfile](https://github.com/lamtev/build-tools-dockers/blob/master/cxx-build-tools/Dockerfile)
 

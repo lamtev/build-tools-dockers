@@ -2,19 +2,8 @@
 
 ##About image
 
-The __qt-build-tools__ image is based on __lamtev/cxx-build-tools:latest__ and it contains:
-
-* boost
-* cloc
-* cmake
-* cppcheck
-* doxygen
-* gcc, g++
-* git
-* lcov
-* openGL
-* qt 5.6.1 base, declarative, tools, translations
-* valgrind
+The __qt-build-tools__ image is based on __lamtev/cxx-build-tools:latest__ and it contains some tools
+to build and test c++ qt projects
 
 ##[Dockerfile](https://github.com/lamtev/build-tools-dockers/blob/master/qt-build-tools/Dockerfile)
 

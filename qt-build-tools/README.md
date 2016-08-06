@@ -2,8 +2,8 @@
 
 ##About image
 
-The __qt-build-tools__ image is based on __lamtev/cxx-build-tools:latest__ and it contains some tools
-to build and test c++ qt projects
+The __qt-build-tools__ image is based on [__lamtev/cxx-build-tools:latest__](https://hub.docker.com/r/lamtev/cxx-build-tools/) and it contains some tools
+to build and test qt projects
 
 ##[Dockerfile](https://github.com/lamtev/build-tools-dockers/blob/master/qt-build-tools/Dockerfile)
 

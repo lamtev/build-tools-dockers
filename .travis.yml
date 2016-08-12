@@ -10,6 +10,7 @@ matrix:
     - env: DOCKER_IMAGE="cxx-build-tools"
     - env: DOCKER_IMAGE="qt-build-tools"
     - env: DOCKER_IMAGE="latex-build-tools"
+    - env: DOCKER_IMAGE="java-build-tools"
 
 script:
   - cd $DOCKER_IMAGE

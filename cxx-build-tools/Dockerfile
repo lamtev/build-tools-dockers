@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y \
 		curl \
 		doxygen \
 		g++ \
+		gcc \
 		git \
 		lcov \
 		libboost-all-dev \

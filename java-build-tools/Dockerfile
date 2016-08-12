@@ -2,13 +2,14 @@ FROM ubuntu:latest
 
 RUN apt-get update && apt-get install -y \
 		default-jdk \
-		wget \
-		unzip \
 		git \
+		unzip \
+		wget \
 	&& rm -rf /var/lib/apt/lists/*
 	
 RUN wget https://services.gradle.org/distributions/gradle-2.14.1-bin.zip \
 	&& unzip -q gradle-2.14.1-bin.zip -d /usr/local 
 	
-ENV GRADLE_HOME /usr/local/gradle-2.14.1
-ENV PATH $GRADLE_HOME/bin:$PATH
+ENV GRADLE_HOME=/usr/local/gradle-2.14.1 \
+    	PATH=$GRADLE_HOME/bin:$PATH \
+    	JAVA_HOME=/usr/lib/jvm/default-java

@@ -8,4 +8,4 @@ The __latex-build-tools__ image is based on [__ubuntu__](https://hub.docker.com/
  
 ##Docker pull command [![Docker Pulls](https://img.shields.io/docker/pulls/lamtev/latex-build-tools.svg?style=flat-square)](https://hub.docker.com/r/lamtev/latex-build-tools/)
  
-`docker pull lamtev/latex-build-tools:latest`
+`docker pull lamtev/latex-build-tools`

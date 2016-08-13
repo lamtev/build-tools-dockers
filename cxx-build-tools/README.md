@@ -8,4 +8,4 @@ The __cxx-build-tools__ image is based on [__ubuntu__](https://hub.docker.com/_/
 
 ##Docker pull command  [![Docker Pulls](https://img.shields.io/docker/pulls/lamtev/cxx-build-tools.svg?style=flat-square)](https://hub.docker.com/r/lamtev/cxx-build-tools/)
 
-`docker pull lamtev/cxx-build-tools:latest`
+`docker pull lamtev/cxx-build-tools`

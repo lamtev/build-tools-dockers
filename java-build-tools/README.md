@@ -8,4 +8,4 @@ The __java-build-tools__ image is based on [__ubuntu__](https://hub.docker.com/_
 
 ##Docker pull command [![Docker Pulls](https://img.shields.io/docker/pulls/lamtev/java-build-tools.svg?style=flat-square)](https://hub.docker.com/r/lamtev/java-build-tools/)
 
-`docker pull lamtev/java-build-tools:latest`
+`docker pull lamtev/java-build-tools`

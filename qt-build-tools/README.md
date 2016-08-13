@@ -8,4 +8,4 @@ The __qt-build-tools__ image is based on [__lamtev/cxx-build-tools__](https://hu
 
 ##Docker pull command [![Docker Pulls](https://img.shields.io/docker/pulls/lamtev/qt-build-tools.svg?style=flat-square)](https://hub.docker.com/r/lamtev/qt-build-tools/)
 
-`docker pull lamtev/qt-build-tools:latest`
+`docker pull lamtev/qt-build-tools`

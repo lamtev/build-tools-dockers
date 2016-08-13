@@ -11,6 +11,7 @@ matrix:
     - env: DOCKER_IMAGE="qt-build-tools"
     - env: DOCKER_IMAGE="latex-build-tools"
     - env: DOCKER_IMAGE="java-build-tools"
+    - env: DOCKER_IMAGE="android-build-tools"
 
 script:
   - cd $DOCKER_IMAGE

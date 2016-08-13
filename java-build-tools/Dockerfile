@@ -11,5 +11,5 @@ RUN wget https://services.gradle.org/distributions/gradle-2.14.1-bin.zip \
 	&& unzip -q gradle-2.14.1-bin.zip -d /usr/local 
 	
 ENV GRADLE_HOME=/usr/local/gradle-2.14.1 \
-    	PATH=$GRADLE_HOME/bin:$PATH \
-    	JAVA_HOME=/usr/lib/jvm/default-java
+    PATH=$GRADLE_HOME/bin:$PATH \
+    JAVA_HOME=/usr/lib/jvm/default-java

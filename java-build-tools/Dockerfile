@@ -8,7 +8,8 @@ RUN apt-get update && apt-get install -y \
 	&& rm -rf /var/lib/apt/lists/*
 	
 RUN wget https://services.gradle.org/distributions/gradle-2.14.1-bin.zip \
-	&& unzip -q gradle-2.14.1-bin.zip -d /usr/local 
+	&& unzip -q gradle-2.14.1-bin.zip -d /usr/local \
+	&& rm gradle-2.14.1-bin.zip
 	
 ENV GRADLE_HOME=/usr/local/gradle-2.14.1 \
     PATH=$GRADLE_HOME/bin:$PATH \

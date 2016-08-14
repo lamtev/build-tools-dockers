@@ -2,7 +2,7 @@ FROM lamtev/java-build-tools:latest
 
 ENV ANDROID_API_LEVELS="android-16,android-17,android-18,android-19,android-21,android-22,android-23,android-24" \
 	ANDROID_ARMEABIS="sys-img-armeabi-v7a-android-16,sys-img-armeabi-v7a-android-17,sys-img-armeabi-v7a-android-18,sys-img-armeabi-v7a-android-19,sys-img-armeabi-v7a-android-21,sys-img-armeabi-v7a-android-22,sys-img-armeabi-v7a-android-23" \
-	ANDROID_HOME=/usr/local/android-sdk-linux
+	ANDROID_HOME=/usr/lib/android-sdk-linux
 	
 ENV PATH $PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/24.0.1
 
@@ -14,7 +14,7 @@ RUN dpkg --add-architecture i386 \
 	&& rm -rf /var/lib/apt/lists/*
 	
 RUN wget https://dl.google.com/android/android-sdk_r24.4.1-linux.tgz \
-	&& tar -xvzf android-sdk_r24.4.1-linux.tgz -C /usr/local \
+	&& tar -xvzf android-sdk_r24.4.1-linux.tgz -C /usr/lib \
 	&& echo y | android update sdk -a -u -t platform-tools,${ANDROID_API_LEVELS},build-tools-24.0.1,${ANDROID_ARMEABIS} \
     	&& chmod a+x -R $ANDROID_HOME \
     	&& chown -R root:root $ANDROID_HOME

@@ -7,19 +7,12 @@ services:
 
 matrix:
   include:
-    #- env: DOCKER_IMAGE="cxx-build-tools"
-    #- env: DOCKER_IMAGE="qt-build-tools"
-    #- env: DOCKER_IMAGE="latex-build-tools"
+    - env: DOCKER_IMAGE="cxx-build-tools"
+    - env: DOCKER_IMAGE="qt-build-tools"
     - env: DOCKER_IMAGE="java-build-tools"
     - env: DOCKER_IMAGE="android-build-tools"
+    - env: DOCKER_IMAGE="latex-build-tools"
 
 script:
   - cd $DOCKER_IMAGE
   - docker build -t lamtev/$DOCKER_IMAGE . 
-  
-after_success:
-  - if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then	
-      docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";		
-      docker tag lamtev/$DOCKER_IMAGE lamtev/$DOCKER_IMAGE:$(date +%Y%m%d%H%M%S);		
-      docker push lamtev/$DOCKER_IMAGE;
-    fi

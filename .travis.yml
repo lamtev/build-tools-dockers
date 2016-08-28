@@ -7,11 +7,11 @@ services:
 
 matrix:
   include:
-    - env: DOCKER_IMAGE="cxx-build-tools"
-    - env: DOCKER_IMAGE="qt-build-tools"
-    - env: DOCKER_IMAGE="java-build-tools"
-    - env: DOCKER_IMAGE="android-build-tools"
-    - env: DOCKER_IMAGE="latex-build-tools"
+    - env: DOCKER_IMAGE="cxx"
+    - env: DOCKER_IMAGE="qt"
+    - env: DOCKER_IMAGE="java"
+    - env: DOCKER_IMAGE="android"
+    - env: DOCKER_IMAGE="latex"
 
 script:
   - cd $DOCKER_IMAGE

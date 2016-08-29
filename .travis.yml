@@ -10,7 +10,7 @@ matrix:
     - env: DOCKER_IMAGE="cxx"
     - env: DOCKER_IMAGE="qt"
     - env: DOCKER_IMAGE="java"
-    #- env: DOCKER_IMAGE="android"
+    - env: DOCKER_IMAGE="android"
     - env: DOCKER_IMAGE="latex"
 
 script:

@@ -1,4 +1,4 @@
-FROM lamtev/java-build-tools:latest
+FROM lamtev/java:latest
 
 ENV ANDROID_API_LEVELS="android-16,android-17,android-18,android-19,android-21,android-22,android-23,android-24" \
 	ANDROID_ARMEABIS="sys-img-armeabi-v7a-android-16,sys-img-armeabi-v7a-android-17,sys-img-armeabi-v7a-android-18,sys-img-armeabi-v7a-android-19,sys-img-armeabi-v7a-android-21,sys-img-armeabi-v7a-android-22,sys-img-armeabi-v7a-android-23" \

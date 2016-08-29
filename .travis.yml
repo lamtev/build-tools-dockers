@@ -15,4 +15,5 @@ matrix:
 
 script:
   - cd $DOCKER_IMAGE
-  - docker build -t lamtev/$DOCKER_IMAGE . 
+  - chmod +x build.sh
+  - ./build.sh

@@ -2,7 +2,7 @@
 
 show_image_info()
 {
-	docker run lamtev/android bin/bash -c " android list "
+	docker run lamtev/android /bin/bash -c " android list "
 }
 
 cd full

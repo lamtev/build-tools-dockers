@@ -1,8 +1,8 @@
-#The android:no-emulator docker image
+#The android docker image
 
 ##About image
 
-The __android__ image is based on [__lamtev/java__](https://hub.docker.com/r/lamtev/java/)__:latest__ and it contains some tools to build and test android projects.
+The __android__ image is based on [__lamtev/java__](https://hub.docker.com/r/lamtev/java/)__:latest__ and it contains some tools to build and test android projects: latest android api.
 
 [Dockerfile](https://github.com/lamtev/build-tools-dockers/blob/master/android/full/Dockerfile)
 

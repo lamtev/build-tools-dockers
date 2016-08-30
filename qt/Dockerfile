@@ -1,5 +1,7 @@
 FROM lamtev/cxx:latest
 
+MAINTAINER Anton Lamtev <antonlamtev@gmail.com>
+
 RUN apt-get update && apt-get install -y software-properties-common \
 	&& apt-add-repository -y ppa:beineri/opt-qt561-xenial
 

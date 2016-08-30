@@ -1,5 +1,7 @@
 FROM lamtev/java:latest
 
+MAINTAINER Anton Lamtev <antonlamtev@gmail.com>
+
 ENV ANDROID_API_LEVELS="android-24" \
 	ANDROID_HOME=/usr/lib/android-sdk-linux
 	

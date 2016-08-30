@@ -1,5 +1,7 @@
 FROM ubuntu:latest
 
+MAINTAINER Anton Lamtev <antonlamtev@gmail.com>
+
 ENV GRADLE_HOME=/usr/lib/gradle-3.0 \
     JAVA_HOME=/usr/lib/jdk1.8.0_102
 

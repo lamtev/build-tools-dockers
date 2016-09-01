@@ -1,4 +1,4 @@
-# Docker images with build tools [![Travis branch](https://img.shields.io/travis/lamtev/build-tools-dockers/master.svg?style=flat-square)]([![Build Status](https://travis-ci.org/lamtev/build-tools-dockers.svg?branch=master)](https://travis-ci.org/lamtev/build-tools-dockers))
+# Docker images with build tools [![Travis branch](https://img.shields.io/travis/lamtev/build-tools-dockers/master.svg?style=flat-square)](https://travis-ci.org/lamtev/build-tools-dockers)
 
 * [__c/c++__](https://github.com/lamtev/build-tools-dockers/tree/master/cxx) [![Docker Pulls](https://img.shields.io/docker/pulls/lamtev/cxx.svg?style=flat-square)](https://hub.docker.com/r/lamtev/cxx/)
 * [__Qt__](https://github.com/lamtev/build-tools-dockers/tree/master/qt) [![Docker Pulls](https://img.shields.io/docker/pulls/lamtev/qt.svg?style=flat-square)](https://hub.docker.com/r/lamtev/qt/)

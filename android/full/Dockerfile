@@ -22,14 +22,6 @@ RUN wget https://dl.google.com/android/android-sdk_r24.4.1-linux.tgz \
     	&& chown -R root:root $ANDROID_HOME
 	
 RUN echo "no" | android create avd \
-#			--name Nexus_5_API_24 \
-#			--target android-24 \
-#			--device "Nexus 5" \
-#			--sdcard 256M \
-#			--skin WVGA800 \
-#			--abi armeabi-v7a \
-#			--force \
-#	&& echo "no" | android create avd \
 			--name Nexus_5_API_23 \
 			--target android-23 \
 			--device "Nexus 5" \

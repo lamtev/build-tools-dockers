@@ -17,6 +17,7 @@ RUN dpkg --add-architecture i386 \
 	
 RUN wget https://dl.google.com/android/android-sdk_r24.4.1-linux.tgz \
 	&& tar -xvzf android-sdk_r24.4.1-linux.tgz -C /usr/lib \
+	&& rm android-sdk_r24.4.1-linux.tgz \
 	&& echo y | android update sdk -a -u -t platform-tools,${ANDROID_API_LEVELS},build-tools-24.0.1,${ANDROID_ARMEABIS} \
     	&& chmod a+x -R $ANDROID_HOME \
     	&& chown -R root:root $ANDROID_HOME

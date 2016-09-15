@@ -10,6 +10,7 @@ ENV GRADLE_DISTRIBUTION="gradle-2.14.1-bin.zip" \
 ENV PATH $PATH:$GRADLE_HOME/bin:$JAVA_HOME/bin
 
 RUN apt-get update && apt-get install -y \
+		cloc \
 		git \
 		unzip \
 		wget \

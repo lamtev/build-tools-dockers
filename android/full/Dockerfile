@@ -4,7 +4,7 @@ MAINTAINER Anton Lamtev <antonlamtev@gmail.com>
 
 ENV ANDROID_ARMEABIS="sys-img-armeabi-v7a-android-23"
 
-RUN echo y | android update sdk -t ${ANDROID_ARMEABIS}
+RUN echo y | android update sdk -a -u -t ${ANDROID_ARMEABIS}
 
 RUN echo "no" | android create avd \
 			--name Nexus_5_API_23 \

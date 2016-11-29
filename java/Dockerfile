@@ -2,8 +2,8 @@ FROM ubuntu:latest
 
 MAINTAINER Anton Lamtev <antonlamtev@gmail.com>
 
-ENV GRADLE_DISTRIBUTION="gradle-3.1-bin.zip" \
-    GRADLE_HOME=/usr/lib/gradle-3.1 \
+ENV GRADLE_DISTRIBUTION="gradle-3.2.1-bin.zip" \
+    GRADLE_HOME=/usr/lib/gradle-3.2.1 \
     JAVA_DISTRIBUTION="jdk-8u112-linux-x64.tar.gz" \
     JAVA_HOME=/usr/lib/jdk1.8.0_112 
 

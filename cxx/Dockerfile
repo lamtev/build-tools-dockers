@@ -13,6 +13,7 @@ RUN apt-get update && apt-get install -y \
 		git \
 		lcov \
 		libboost-all-dev \
+		make \
 		python-pip \
 		valgrind \
 		zip \

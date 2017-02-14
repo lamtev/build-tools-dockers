@@ -19,6 +19,7 @@ RUN apt-get update && apt-get install -y \
 		make \
 		python-pip \
 		valgrind \
+		wget \
 		zip \
 	&& rm -rf /var/lib/apt/lists/*
 	

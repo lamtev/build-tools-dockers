@@ -16,7 +16,9 @@ ENV PATH $PATH:$JAVA_HOME/bin:$GRADLE_HOME/bin:$MAVEN_HOME/bin
 
 RUN apt-get update && apt-get install -y \
 		cloc \
+		curl \
 		git \
+		jq \
 		unzip \
 		wget \
 	&& rm -rf /var/lib/apt/lists/*

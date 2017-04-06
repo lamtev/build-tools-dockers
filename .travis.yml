@@ -12,6 +12,7 @@ matrix:
     - env: DOCKER_IMAGE="java"
     - env: DOCKER_IMAGE="android"
     - env: DOCKER_IMAGE="latex"
+    - env: DOCKER_IMAGE="python"
 
 script:
   - cd $DOCKER_IMAGE

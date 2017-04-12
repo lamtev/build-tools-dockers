@@ -8,9 +8,9 @@ ENV JAVA_DISTRIBUTION=jdk-8u121-linux-x64.tar.gz \
     GRADLE_DISTRIBUTION=gradle-3.5-bin.zip \
     GRADLE_URL=https://services.gradle.org/distributions/gradle-3.5-bin.zip \
     GRADLE_HOME=/usr/lib/gradle-3.5 \
-    MAVEN_DISTRIBUTION=apache-maven-3.3.9-bin.zip \
-    MAVEN_URL=http://www-eu.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.zip \
-    MAVEN_HOME=/usr/lib/apache-maven-3.3.9
+    MAVEN_DISTRIBUTION=apache-maven-3.5.0-bin.zip \
+    MAVEN_URL=http://www-eu.apache.org/dist/maven/maven-3/3.5.0/binaries/apache-maven-3.5.0-bin.zip \
+    MAVEN_HOME=/usr/lib/apache-maven-3.5.0
 
 ENV PATH $PATH:$JAVA_HOME/bin:$GRADLE_HOME/bin:$MAVEN_HOME/bin
 

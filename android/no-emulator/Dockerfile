@@ -21,5 +21,7 @@ RUN wget -q https://dl.google.com/android/repository/tools_r25.2.5-linux.zip \
 	
 RUN echo y | android update sdk -a -u -t platform-tools,${ANDROID_API_LEVELS},build-tools-25.0.3,extra-android-m2repository \
     	&& chmod a+x -R $ANDROID_HOME \
-    	&& chown -R root:root $ANDROID_HOME
+    	&& chown -R root:root $ANDROID_HOME \
+	&& mkdir "$ANDROID_HOME/licenses" \
+	&& echo -e "\n8933bad161af4178b1185d1a37fbf41ea5269c55" > "$ANDROID_HOME/licenses/android-sdk-license"
 	

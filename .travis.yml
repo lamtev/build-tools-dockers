@@ -7,6 +7,7 @@ services:
 
 matrix:
   include:
+    - env: DOCKER_IMAGE="base"
     - env: DOCKER_IMAGE="cxx"
     - env: DOCKER_IMAGE="qt"
     - env: DOCKER_IMAGE="java"

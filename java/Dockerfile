@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM lamtev/base:latest
 
 MAINTAINER Anton Lamtev <antonlamtev@gmail.com>
 
@@ -15,12 +15,7 @@ ENV JAVA_DISTRIBUTION=jdk-8u131-linux-x64.tar.gz \
 ENV PATH $PATH:$JAVA_HOME/bin:$GRADLE_HOME/bin:$MAVEN_HOME/bin
 
 RUN apt-get update && apt-get install -y \
-		cloc \
-		curl \
-		git \
 		jq \
-		unzip \
-		wget \
 	&& rm -rf /var/lib/apt/lists/*
 	
 RUN wget --no-check-certificate -c --header "Cookie: oraclelicense=accept-securebackup-cookie" $JAVA_URL \

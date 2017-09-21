@@ -5,9 +5,9 @@ MAINTAINER Anton Lamtev <antonlamtev@gmail.com>
 ENV JAVA_DISTRIBUTION=jdk-8u141-linux-x64.tar.gz \
     JAVA_URL=http://download.oracle.com/otn-pub/java/jdk/8u141-b15/336fa29ff2bb4ef291e347e091f7f4a7/jdk-8u141-linux-x64.tar.gz \
     JAVA_HOME=/usr/lib/jdk1.8.0_141 \
-    GRADLE_DISTRIBUTION=gradle-4.1-bin.zip \
-    GRADLE_URL=https://services.gradle.org/distributions/gradle-4.1-bin.zip \
-    GRADLE_HOME=/usr/lib/gradle-4.1 \
+    GRADLE_DISTRIBUTION=gradle-4.2-bin.zip \
+    GRADLE_URL=https://services.gradle.org/distributions/gradle-4.2-bin.zip \
+    GRADLE_HOME=/usr/lib/gradle-4.2 \
     MAVEN_DISTRIBUTION=apache-maven-3.5.0-bin.zip \
     MAVEN_URL=http://www-eu.apache.org/dist/maven/maven-3/3.5.0/binaries/apache-maven-3.5.0-bin.zip \
     MAVEN_HOME=/usr/lib/apache-maven-3.5.0

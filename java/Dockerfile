@@ -2,9 +2,9 @@ FROM lamtev/base:latest
 
 MAINTAINER Anton Lamtev <antonlamtev@gmail.com>
 
-ENV JAVA_DISTRIBUTION=jdk-8u144-linux-x64.tar.gz \
-    JAVA_URL=http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jdk-8u144-linux-x64.tar.gz \
-    JAVA_HOME=/usr/lib/jdk1.8.0_144 \
+ENV JAVA_DISTRIBUTION=jdk-9_linux-x64_bin.tar.gz \
+    JAVA_URL=http://download.oracle.com/otn-pub/java/jdk/9+181/jdk-9_linux-x64_bin.tar.gz \
+    JAVA_HOME=/usr/lib/jdk-9 \
     GRADLE_DISTRIBUTION=gradle-4.2-bin.zip \
     GRADLE_URL=https://services.gradle.org/distributions/gradle-4.2-bin.zip \
     GRADLE_HOME=/usr/lib/gradle-4.2 \

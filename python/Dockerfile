@@ -24,7 +24,7 @@ RUN apt-get update && apt-get install -y \
 		xz-utils \
 	&& rm -rf /var/lib/apt/lists/*
 	
-RUN wget https://www.python.org/ftp/python/3.6.1/Python-3.6.1.tar.xz \
+RUN DEBIAN_FRONTEND=noninteractive wget https://www.python.org/ftp/python/3.6.1/Python-3.6.1.tar.xz \
 	&& tar xvf Python-3.6.1.tar.xz \
 	&& cd Python-3.6.1 \
 	&& ./configure \
@@ -33,7 +33,7 @@ RUN wget https://www.python.org/ftp/python/3.6.1/Python-3.6.1.tar.xz \
 	
 ADD https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh conda.sh
 
-RUN chmod +x conda.sh
-RUN ./conda.sh -b -p /opt/anaconda
-RUN rm conda.sh
-RUN /opt/anaconda/bin/conda install -q -y numpy scipy matplotlib jupyter
+RUN chmod +x conda.sh \
+	&& ./conda.sh -b -p /opt/anaconda \
+	&& rm conda.sh \
+	&& /opt/anaconda/bin/conda install -q -y numpy scipy matplotlib jupyter

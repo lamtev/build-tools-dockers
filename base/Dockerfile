@@ -2,9 +2,9 @@ FROM ubuntu:latest
 
 MAINTAINER Anton Lamtev <antonlamtev@gmail.com>
 
-ENV CLOC_DISTRIBUTION=cloc-1.72.tar.gz \
-	CLOC_URL=https://github.com/AlDanial/cloc/releases/download/v1.72/cloc-1.72.tar.gz \
-	CLOC_HOME=/usr/lib/cloc-1.72
+ENV CLOC_DISTRIBUTION=cloc-1.80.tar.gz \
+	CLOC_URL=https://github.com/AlDanial/cloc/releases/download/v1.80/cloc-1.80.tar.gz \
+	CLOC_HOME=/usr/lib/cloc-1.80
 
 ENV PATH $PATH:$CLOC_HOME
 

@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 MAINTAINER Anton Lamtev <antonlamtev@gmail.com>
 
-RUN apt-get update && apt-get install -y \
+RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y \
 		ghostscript \
 		texlive-lang-cyrillic \
 		texlive-latex-extra \

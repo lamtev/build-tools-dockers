@@ -5,12 +5,12 @@ MAINTAINER Anton Lamtev <antonlamtev@gmail.com>
 ENV JAVA_DISTRIBUTION=jdk-11.0.1_linux-x64_bin.tar.gz \
     JAVA_URL=http://download.oracle.com/otn-pub/java/jdk/11.0.1+13/90cf5d8f270a4347a95050320eef3fb7/jdk-11.0.1_linux-x64_bin.tar.gz \
     JAVA_HOME=/usr/lib/jdk-11.0.1 \
-    GRADLE_DISTRIBUTION=gradle-5.0-bin.zip \
-    GRADLE_URL=https://services.gradle.org/distributions/gradle-5.0-bin.zip \
-    GRADLE_HOME=/usr/lib/gradle-5.0 \
-    MAVEN_DISTRIBUTION=apache-maven-3.5.4-bin.zip \
-    MAVEN_URL=https://www-eu.apache.org/dist/maven/maven-3/3.5.4/binaries/apache-maven-3.5.4-bin.zip \
-    MAVEN_HOME=/usr/lib/apache-maven-3.5.4
+    GRADLE_DISTRIBUTION=gradle-5.3.1-bin.zip \
+    GRADLE_URL=https://services.gradle.org/distributions/gradle-5.3.1-bin.zip \
+    GRADLE_HOME=/usr/lib/gradle-5.3.1 \
+    MAVEN_DISTRIBUTION=apache-maven-3.6.0-bin.zip \
+    MAVEN_URL=https://www-eu.apache.org/dist/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.zip \
+    MAVEN_HOME=/usr/lib/apache-maven-3.6.0
 
 ENV PATH $PATH:$JAVA_HOME/bin:$GRADLE_HOME/bin:$MAVEN_HOME/bin
 

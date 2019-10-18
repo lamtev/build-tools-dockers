@@ -10,6 +10,7 @@ ENV PATH $PATH:$CLOC_HOME
 
 RUN apt-get update && apt-get install -y \
 		curl \
+		ffmpeg \
 		git \
 		unzip \
 		wget \

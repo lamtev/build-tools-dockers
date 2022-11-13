@@ -9,5 +9,6 @@
 * __LaTeX__ [![Docker Pulls](https://img.shields.io/docker/pulls/lamtev/latex.svg?style=flat-square)](https://hub.docker.com/r/lamtev/latex/)
     * [extra](https://github.com/lamtev/build-tools-dockers/tree/master/latex/extra)
     * [full](https://github.com/lamtev/build-tools-dockers/tree/master/latex/full)
+    * [xe](https://github.com/lamtev/build-tools-dockers/tree/master/latex/xe)
 * __python__ [![Docker Pulls](https://img.shields.io/docker/pulls/lamtev/python.svg?style=flat-square)](https://hub.docker.com/r/lamtev/python/)
 * __base__ [![Docker Pulls](https://img.shields.io/docker/pulls/lamtev/base.svg?style=flat-square)](https://hub.docker.com/r/lamtev/base/)
